@@ -1,0 +1,3 @@
+title: "Neural Vacillator Assignment Precondition" 
+description: "Prevents Duplicants from being assigned to the Neural Vacillator that have all available traits"
+staticID: "Neural_Vacillator_Assignment_Precondition_Mod" 
