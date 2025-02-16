@@ -9,11 +9,11 @@ namespace Bionic_Overclock
     
     public class Overclocker : KMonoBehaviour, IMultiSliderControl
     {
-        [MyCmpReq]
+        [MyCmpGet]
         private MinionResume MinionResume;
-        [MySmiReq]
+        [MySmiGet]
         private BionicBatteryMonitor.Instance batteryMonitor;
-        [MySmiReq]
+        [MySmiGet]
         private BionicOilMonitor.Instance oilMonitor;
         
         private BionicBatteryMonitor.WattageModifier overclockWattageModifier = new BionicBatteryMonitor.WattageModifier("Overclock_Wattage", "", 0, 0);
@@ -70,8 +70,10 @@ namespace Bionic_Overclock
 
         protected override void OnSpawn()
         {
-            base.OnSpawn();
+            base.OnSpawn();            
             InitOverclockModifiers();
+            if (gameObject.HasTag(GameTags.Dead))
+                return;
             RefreshOverclockedModifiers();
             batteryMonitor.AddOrUpdateModifier(overclockWattageModifier);
 
