@@ -13,13 +13,8 @@ namespace help_magma_solidified_in_my_mesh_tile_and_now_my_volcano_tamer_is_brok
         }
         public void Sim200ms(float dt)
         {
-            if (Grid.Element[cell].IsSolid)
-            {
-                SimMessages.Dig(cell);
-                //Grid.RenderedByWorld[cell] = true;
-                //World.Instance.groundRenderer.MarkDirty(cell);
-            }
-                                                     
+            if (Grid.Element[cell].IsSolid)            
+                SimMessages.Dig(cell);                                                                                 
         }        
     }
     [HarmonyPatch(typeof(MeshTileConfig), nameof(MeshTileConfig.DoPostConfigureComplete))]
