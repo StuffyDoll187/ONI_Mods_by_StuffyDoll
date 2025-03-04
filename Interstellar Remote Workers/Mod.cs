@@ -3,7 +3,7 @@ using HarmonyLib;
 
 namespace Interstellar_Remote_Workers
 {
-    public class GeyserControlMod : KMod.UserMod2
+    public class Mod : KMod.UserMod2
     {
         public override void OnLoad(Harmony harmony)
         {
