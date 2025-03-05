@@ -1,12 +1,13 @@
 ﻿using HarmonyLib;
 using UnityEngine;
+using System;
 using System.Collections.Generic;
 
 namespace Geyser_Control
 {
     public class Patches
     {
-        [HarmonyPatch(typeof(GeyserGenericConfig), nameof(GeyserGenericConfig.CreateGeyser))]
+        [HarmonyPatch(typeof(GeyserGenericConfig), nameof(GeyserGenericConfig.CreateGeyser), new Type[] { typeof(string), typeof(string), typeof(int), typeof(int),typeof(string),typeof(string), typeof(HashedString), typeof(float), typeof(string[]), typeof(string[])})]
         public class GeyserGenericConfig_CreateGeyser_Patch
         {
             public static void Postfix(GameObject __result)
@@ -15,11 +16,11 @@ namespace Geyser_Control
                 if (Config.Instance.dormancyButton)
                     __result.AddComponent<DormancyButton>();
                 if (Config.Instance.eruptionButton)
-                __result.AddComponent<EruptionButton>();                
+                    __result.AddComponent<EruptionButton>();                
                 if (Config.Instance.resetButton)
-                __result.AddComponent<GeyserSliders.ResetButton>();
+                    __result.AddComponent<GeyserSliders.ResetButton>();
                 if (Config.Instance.randomizeSlidersButton)
-                __result.AddComponent<GeyserSliders.RandomizeSlidersButton>();
+                    __result.AddComponent<GeyserSliders.RandomizeSlidersButton>();
 
                 __result.AddComponent<GeyserSliders>();
 
