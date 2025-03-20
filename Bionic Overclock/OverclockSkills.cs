@@ -19,7 +19,11 @@ namespace Bionic_Overclock
                 Db.Get().SkillGroups.Add(new SkillGroup("Overclock", null, "", "", ""));
                 Db.Get().SkillGroups.Get("Overclock").relevantAttributes = new List<Klei.AI.Attribute>();
                 Db.Get().SkillGroups.Get("Overclock").requiredChoreGroups = new List<string>();
-                Db.Get().SkillGroups.Get("Overclock").allowAsAptitude = false;                
+                Db.Get().SkillGroups.Get("Overclock").allowAsAptitude = false;
+
+
+
+
 
                 AddSkill.Invoke(__instance.Skills, new object[]
                 {
@@ -27,7 +31,7 @@ namespace Bionic_Overclock
                         id: "BionicsOverclock",
                         name: "Overclocking",
                         description: "Allows changing Booster Attribute Potency at the expense of Bionic Wattage and Lubrication needs",
-                        dlcId: "DLC3_ID",
+                        //dlcId: "DLC3_ID",
                         tier: 0,
                         hat: "hat_role_gainingboosters1",
                         badge: "skillbadge_bionic_booster1",
@@ -54,9 +58,12 @@ namespace Bionic_Overclock
                                 )),
                             },
                         priorSkills: null,
-                        requiredDuplicantModel: GameTags.Minions.Models.Bionic.Name
+                        requiredDuplicantModel: GameTags.Minions.Models.Bionic.Name,
+                        requiredDlcIds: DlcManager.DLC3
+
                     )
-                });              
+                });  
+                
             }
         }
 

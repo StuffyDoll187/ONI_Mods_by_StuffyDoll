@@ -1,4 +1,6 @@
-supportedContent: ALL
-minimumSupportedBuild: 652372
-version: 1.0.2
+requiredDlcIds:
+- DLC3_ID
+forbiddenDlcIds:
+minimumSupportedBuild: 659523
+version: 1.0.4
 APIVersion: 2

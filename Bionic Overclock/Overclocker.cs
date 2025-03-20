@@ -115,7 +115,9 @@ namespace Bionic_Overclock
             {
                 foreach (AttributeModifier modifier in attributeModifiersTemplate)
                 {
-                    overclockedModifiers.Add(modifier.AttributeId, modifier.Clone());                    
+                    var clone = new AttributeModifier(modifier.AttributeId, modifier.Value, modifier.Description, is_readonly: false);                   
+                    overclockedModifiers.Add(modifier.AttributeId, clone);     
+                    
                 }
             }
         }
