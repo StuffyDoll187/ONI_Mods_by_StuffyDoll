@@ -17,6 +17,7 @@ namespace Chaos_Reigns
         [HarmonyPatch(typeof(EntityTemplates), nameof(EntityTemplates.ExtendEntityToFertileCreature), new Type[]
         {            
             typeof(GameObject),
+            typeof(IHasDlcRestrictions),
             typeof(string),
             typeof(string) ,
             typeof(string) ,
@@ -25,10 +26,8 @@ namespace Chaos_Reigns
             typeof(string) ,
             typeof(float ),
             typeof(float) ,
-            typeof(List<FertilityMonitor.BreedingChance>),
-            typeof(string[] ) ,
+            typeof(List<FertilityMonitor.BreedingChance>),                        
             typeof(int) ,
-            typeof(bool ),
             typeof(bool ),
             typeof(bool ),
             typeof(float ),
@@ -37,12 +36,19 @@ namespace Chaos_Reigns
 
         public class EntityTemplates_ExtendEntityToFertileCreature_Patch
         {
-            public static void Postfix(ref GameObject __result, string[] dlcIds)
+            public static void Postfix(ref GameObject __result, IHasDlcRestrictions dlcRestrictions)
             {
-                //Debug.Log(__result.PrefabID());
-                //Debug.Log(__result.PrefabID() +" "+ DlcManager.IsAllContentSubscribed(dlcIds) + " " +__result.HasTag(GameTags.OriginalCreature));
+                string[] requiredDlcOrNull = null;
+                if (dlcRestrictions != null)
+                    requiredDlcOrNull = dlcRestrictions.GetRequiredDlcIds();
+
                 
-                if (!DlcManager.IsAllContentSubscribed(dlcIds))
+
+
+                //Debug.Log(__result.PrefabID());
+                //Debug.Log(__result.PrefabID() +" "+ DlcManager.IsAllContentSubscribed(requiredDlcOrNull) + " " +__result.HasTag(GameTags.OriginalCreature));
+                
+                if (!DlcManager.IsAllContentSubscribed(requiredDlcOrNull))
                     return;
                 if ((Config.Instance.ZoologicalIncludeMorphs == false) && !__result.HasTag(GameTags.OriginalCreature))
                     return;
@@ -57,6 +63,7 @@ namespace Chaos_Reigns
         [HarmonyPatch(typeof(EntityTemplates), nameof(EntityTemplates.ExtendEntityToFertileCreature), new Type[]
         {
             typeof(GameObject),
+            typeof(IHasDlcRestrictions),
             typeof(string),
             typeof(string) ,
             typeof(string) ,
@@ -66,9 +73,7 @@ namespace Chaos_Reigns
             typeof(float ),
             typeof(float) ,
             typeof(List<FertilityMonitor.BreedingChance>),
-            typeof(string[] ) ,
             typeof(int) ,
-            typeof(bool ),
             typeof(bool ),
             typeof(bool ),
             typeof(float ),
@@ -77,12 +82,15 @@ namespace Chaos_Reigns
 
         public class EntityTemplates_ExtendEntityToFertileCreature_Patch2
         {
-            public static void Postfix(ref GameObject __result, string[] dlcIds)
+            public static void Postfix(ref GameObject __result, IHasDlcRestrictions dlcRestrictions)
             {
+                string[] requiredDlcOrNull = null;
+                if (dlcRestrictions != null)
+                    requiredDlcOrNull = dlcRestrictions.GetRequiredDlcIds();
                 //Debug.Log(__result.PrefabID());
                 //Debug.Log(__result.PrefabID() +" "+ DlcManager.IsAllContentSubscribed(dlcIds) + " " +__result.HasTag(GameTags.OriginalCreature));
 
-                if (!DlcManager.IsAllContentSubscribed(dlcIds))
+                if (!DlcManager.IsAllContentSubscribed(requiredDlcOrNull))
                     return;
                 if ((Config.Instance.TwitchZoologicalIncludeMorphs == false) && !__result.HasTag(GameTags.OriginalCreature))
                     return;
@@ -101,11 +109,11 @@ namespace Chaos_Reigns
             public static void Postfix(ref List<GameObject> __result)
             {
                 if (Config.Instance.EnableMoltenSlugs)
-                    __result.Add(ClusterMapMeteorShowerConfig.CreateClusterMeteor("SpongeSlug", "SpongeSlugMeteorEvent", "SpongeSlug Meteor Shower", "Desc", "caterpillar_kanim", initial_anim: "wtr_ui", dlcIDs: DlcManager.AVAILABLE_EXPANSION1_ONLY));
+                    __result.Add(ClusterMapMeteorShowerConfig.CreateClusterMeteor("SpongeSlug", "SpongeSlugMeteorEvent", "SpongeSlug Meteor Shower", "Desc", "caterpillar_kanim", initial_anim: "wtr_ui", requiredDlcIds: DlcManager.EXPANSION1, forbiddenDlcIds: null));
                 if (Config.Instance.EnableZoological)
-                    __result.Add(ClusterMapMeteorShowerConfig.CreateClusterMeteor("Zoological", "ZoologicalMeteorEvent", "Zoological Meteor Shower", "Desc", "shower_question_mark_kanim", initial_anim: "ui", dlcIDs: DlcManager.AVAILABLE_EXPANSION1_ONLY));
+                    __result.Add(ClusterMapMeteorShowerConfig.CreateClusterMeteor("Zoological", "ZoologicalMeteorEvent", "Zoological Meteor Shower", "Desc", "shower_question_mark_kanim", initial_anim: "ui", requiredDlcIds: DlcManager.EXPANSION1, forbiddenDlcIds: null));
                 if (Config.Instance.EnableWaterBalloons)
-                    __result.Add(ClusterMapMeteorShowerConfig.CreateClusterMeteor("WaterBalloon", "WaterBalloonMeteorEvent", "Water Balloon Meteor Shower", "Desc", "balloon_basic_red_kanim", initial_anim: "floor_floor_1_0_loop", dlcIDs:DlcManager.AVAILABLE_EXPANSION1_ONLY));
+                    __result.Add(ClusterMapMeteorShowerConfig.CreateClusterMeteor("WaterBalloon", "WaterBalloonMeteorEvent", "Water Balloon Meteor Shower", "Desc", "balloon_basic_red_kanim", initial_anim: "floor_floor_1_0_loop", requiredDlcIds: DlcManager.EXPANSION1, forbiddenDlcIds: null));
             }
         }
 

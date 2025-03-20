@@ -8,11 +8,13 @@ using UnityEngine;
 
 namespace Chaos_Reigns
 {
-    internal class SpongeSlugCometConfig : IEntityConfig
+    internal class SpongeSlugCometConfig : IEntityConfig, IHasDlcRestrictions
     {
         public static string ID = "MoltenSpongeSlugComet";
 
-        public string[] GetDlcIds() => DlcManager.AVAILABLE_ALL_VERSIONS;
+        string[] IEntityConfig.GetDlcIds() => null;
+        string[] IHasDlcRestrictions.GetRequiredDlcIds() => DlcManager.EXPANSION1;
+        string[] IHasDlcRestrictions.GetForbiddenDlcIds() => null;
 
         public GameObject CreatePrefab()
         {

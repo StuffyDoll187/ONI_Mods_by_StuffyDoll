@@ -5,11 +5,13 @@ using UnityEngine;
 
 namespace Chaos_Reigns
 {
-    public class WaterBalloonCometConfig : IEntityConfig
+    public class WaterBalloonCometConfig : IEntityConfig, IHasDlcRestrictions
     {
         public static string ID = "WaterBalloonComet";
 
-        public string[] GetDlcIds() => DlcManager.AVAILABLE_ALL_VERSIONS;
+        string[] IEntityConfig.GetDlcIds() => null;
+        string[] IHasDlcRestrictions.GetRequiredDlcIds() => DlcManager.EXPANSION1;
+        string[] IHasDlcRestrictions.GetForbiddenDlcIds() => null;
 
         public GameObject CreatePrefab()
         {

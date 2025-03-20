@@ -7,15 +7,17 @@ using UnityEngine;
 
 namespace Chaos_Reigns
 {
-    internal class ZoologicalCometConfig : IEntityConfig
+    internal class ZoologicalCometConfig : IEntityConfig, IHasDlcRestrictions
     {
         
         
             public static string ID = "ZoologicalComet";
 
-            public string[] GetDlcIds() => DlcManager.AVAILABLE_ALL_VERSIONS;
+        string[] IEntityConfig.GetDlcIds() => null;
+        string[] IHasDlcRestrictions.GetRequiredDlcIds() => DlcManager.EXPANSION1;
+        string[] IHasDlcRestrictions.GetForbiddenDlcIds() => null;
 
-            public GameObject CreatePrefab()
+        public GameObject CreatePrefab()
             {
                 GameObject entity = EntityTemplates.CreateEntity(ZoologicalCometConfig.ID, "ZoologicalComet");
                 entity.AddOrGet<SaveLoadRoot>();
