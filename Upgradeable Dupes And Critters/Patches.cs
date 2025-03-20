@@ -9,6 +9,8 @@ using System.Runtime.CompilerServices;
 using static ResearchTypes;
 using System.Collections.Generic;
 using System.Reflection;
+using static BionicUpgradesMonitor;
+using PeterHan.PLib.UI;
 
 namespace Upgradeable_Dupes_And_Critters
 {
@@ -132,17 +134,18 @@ namespace Upgradeable_Dupes_And_Critters
             typeof(float) ,
             typeof(int ),
             typeof(float) ,
+            typeof(string[]),
             typeof(string[])
         })]
         class EggConfig_CreateEgg
         {
-            static void Postfix(ref GameObject __result, string id,string name,string desc,Tag creature_id,string anim,float mass,int egg_sort_order,float base_incubation_rate,string[] dlcIds)
+            static void Postfix(ref GameObject __result, string id,string name,string desc,Tag creature_id,string anim,float mass,int egg_sort_order,float base_incubation_rate,string[] requiredDlcIds, string[] forbiddenDlcIds)
             {
                 __result.AddComponent<CritterUpgradeTracker>();
-                EggConfig_CreateEgg.CreateEggRecipes(id, name, desc, creature_id, anim, mass, egg_sort_order, base_incubation_rate, dlcIds);
+                EggConfig_CreateEgg.CreateEggRecipes(id, name, desc, creature_id, anim, mass, egg_sort_order, base_incubation_rate, requiredDlcIds, forbiddenDlcIds);
             }
 
-            static void CreateEggRecipes(string id,string name,string desc,Tag creature_id,string anim,float mass,int egg_sort_order,float base_incubation_rate,string[] dlcIds)
+            static void CreateEggRecipes(string id,string name,string desc,Tag creature_id,string anim,float mass,int egg_sort_order,float base_incubation_rate,string[] requiredDlcIds, string[] forbiddenDlcIds)
             {
                 //string str1 = string.Format((string)STRINGS.BUILDINGS.PREFABS.EGGCRACKER.RESULT_DESCRIPTION, (object)name);
                 string str1 = string.Format((string) Strings.Get("STRINGS.BUILDINGS.PREFABS.EGGCRACKER.RESULT_DESCRIPTION"), (object)name);
@@ -157,7 +160,7 @@ namespace Upgradeable_Dupes_And_Critters
                 };
                     string obsolete_id = ComplexRecipeManager.MakeObsoleteRecipeID(id, (Tag)"RawEgg");
                     string str2 = ComplexRecipeManager.MakeRecipeID("UpgradedEggCracker", (IList<ComplexRecipe.RecipeElement>)recipeElementArray1, (IList<ComplexRecipe.RecipeElement>)recipeElementArray2);
-                ComplexRecipe complexRecipe = new ComplexRecipe(str2, recipeElementArray1, recipeElementArray2, dlcIds)
+                ComplexRecipe complexRecipe = new ComplexRecipe(str2, recipeElementArray1, recipeElementArray2, requiredDlcIds, forbiddenDlcIds)
                 {
                     //description = string.Format((string)STRINGS.BUILDINGS.PREFABS.EGGCRACKER.RECIPE_DESCRIPTION, (object)name, (object)str1),
                     description = string.Format((string) Strings.Get("STRINGS.BUILDINGS.PREFABS.EGGCRACKER.RECIPE_DESCRIPTION"), (object)name, (object)str1),
@@ -449,6 +452,12 @@ namespace Upgradeable_Dupes_And_Critters
                 //Debug.Log("New " + __result);
             }
         }
+
+
+
+
+
+        
 
     }
 }

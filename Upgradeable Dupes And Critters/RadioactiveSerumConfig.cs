@@ -25,7 +25,7 @@ namespace Upgradeable_Dupes_And_Critters
         {
             //GameObject looseentity = EntityTemplates.ExtendEntityToMedicine(EntityTemplates.CreateLooseEntity("RadioactiveSerum", "Radioactive Serum", RadioactiveSerumConfig.DESC, 1f, true, Assets.GetAnim((HashedString)"vial_radiation_kanim"), "object", Grid.SceneLayer.Front, EntityTemplates.CollisionShape.RECTANGLE, 0.8f, 0.4f, true), MedicineInfo);
             GameObject looseentity = EntityTemplates.CreateLooseEntity("RadioactiveSerum", "Radioactive Serum", RadioactiveSerumConfig.DESC, 1f, true, Assets.GetAnim((HashedString)"vial_radiation_kanim"), "object", Grid.SceneLayer.Front, EntityTemplates.CollisionShape.RECTANGLE, 0.8f, 0.4f, true);
-
+            looseentity.AddTag(GameTags.Medicine);
             ComplexRecipe.RecipeElement[] recipeElementArray1 = new ComplexRecipe.RecipeElement[3]
             {
                 new ComplexRecipe.RecipeElement(SimHashes.Glass.CreateTag(), 1f),

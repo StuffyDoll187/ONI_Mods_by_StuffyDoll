@@ -56,7 +56,7 @@ namespace Upgradeable_Dupes_And_Critters
             if (!egg.TryGetComponent<CritterUpgradeTracker>(out CritterUpgradeTracker eggcomponent))
             {
                 Debug.Log("Failed to Get Critter Upgrade Tracker on " + egg.name + "\nAdding manually");
-                egg.AddComponent<CritterUpgradeTracker>();                
+                eggcomponent = egg.AddComponent<CritterUpgradeTracker>();                
             }
                 //CritterUpgradeTracker eggcomponent = egg.AddOrGet<CritterUpgradeTracker>();               
                 eggcomponent.Upgrades = this.Upgrades;       
@@ -70,7 +70,7 @@ namespace Upgradeable_Dupes_And_Critters
             if (!adult.TryGetComponent<CritterUpgradeTracker>(out CritterUpgradeTracker adultcomponent))
             {
                 Debug.Log("Failed to Get Critter Upgrade Tracker on " + adult.name + "\nAdding manually");
-                adult.AddComponent<CritterUpgradeTracker>();
+                adultcomponent = adult.AddComponent<CritterUpgradeTracker>();
                 
             }
             //CritterUpgradeTracker adultcmp = adult.AddOrGet<CritterUpgradeTracker>();

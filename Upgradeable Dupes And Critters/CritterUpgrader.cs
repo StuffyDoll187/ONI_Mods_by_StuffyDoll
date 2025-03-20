@@ -293,7 +293,7 @@ public class GravitasCreatureManipulator :
                 this.TryShowCompletedNotification();
             }*/
 
-            public void UpgradeCritter(Brain brain)
+            public void UpgradeCritter(CreatureBrain brain)
             {
                 //brain.AddTag("Upgraded".ToTag());
                 CritterUpgradeTracker cmp = brain.GetComponent<CritterUpgradeTracker>();                

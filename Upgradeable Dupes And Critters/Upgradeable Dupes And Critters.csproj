@@ -54,6 +54,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RadioactiveSerumConfig.cs" />
     <Compile Include="STRINGS.cs" />
+    <Compile Include="TelepadButton.cs" />
     <Compile Include="UnusedSkillPointsMasteryBonus.cs" />
     <Compile Include="UpgradedEggCracker.cs" />
     <Compile Include="UpgradedEggCrackerConfig.cs" />
