@@ -1,0 +1,260 @@
+msgid ""
+msgstr ""
+"Application: Oxygen Not Included"
+"POT Version: 2.0"
+
+#. Geyser_Control.STRINGS.BUTTONS.CONFIRM.NAME
+msgctxt "Geyser_Control.STRINGS.BUTTONS.CONFIRM.NAME"
+msgid "CONFIRM"
+msgstr "确认"
+
+#. Geyser_Control.STRINGS.BUTTONS.DISABLED.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.BUTTONS.DISABLED.TOOLTIP"
+msgid "Analyze To Enable"
+msgstr "分析以启用"
+
+#. Geyser_Control.STRINGS.BUTTONS.DORMANCYBUTTON.ENTER.NAME
+msgctxt "Geyser_Control.STRINGS.BUTTONS.DORMANCYBUTTON.ENTER.NAME"
+msgid "Enter Dormancy"
+msgstr "进入休眠状态"
+
+#. Geyser_Control.STRINGS.BUTTONS.DORMANCYBUTTON.ENTER.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.BUTTONS.DORMANCYBUTTON.ENTER.TOOLTIP"
+msgid ""
+msgstr ""
+
+#. Geyser_Control.STRINGS.BUTTONS.DORMANCYBUTTON.EXIT.NAME
+msgctxt "Geyser_Control.STRINGS.BUTTONS.DORMANCYBUTTON.EXIT.NAME"
+msgid "Exit Dormancy"
+msgstr "退出休眠"
+
+#. Geyser_Control.STRINGS.BUTTONS.DORMANCYBUTTON.EXIT.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.BUTTONS.DORMANCYBUTTON.EXIT.TOOLTIP"
+msgid ""
+msgstr ""
+
+#. Geyser_Control.STRINGS.BUTTONS.ERUPTIONBUTTON.NAME
+msgctxt "Geyser_Control.STRINGS.BUTTONS.ERUPTIONBUTTON.NAME"
+msgid "Advance To Next Eruption"
+msgstr "前进到下一次喷发"
+
+#. Geyser_Control.STRINGS.BUTTONS.ERUPTIONBUTTON.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.BUTTONS.ERUPTIONBUTTON.TOOLTIP"
+msgid ""
+msgstr ""
+
+#. Geyser_Control.STRINGS.BUTTONS.RANDOMIZESLIDERSBUTTON.NAME
+msgctxt "Geyser_Control.STRINGS.BUTTONS.RANDOMIZESLIDERSBUTTON.NAME"
+msgid "Randomize Values"
+msgstr "随机化值"
+
+#. Geyser_Control.STRINGS.BUTTONS.RANDOMIZESLIDERSBUTTON.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.BUTTONS.RANDOMIZESLIDERSBUTTON.TOOLTIP"
+msgid "Sets random values for the 5 primary sliders"
+msgstr "为 5 个主要滑块设置随机值"
+
+#. Geyser_Control.STRINGS.BUTTONS.RESETBUTTON.NAME
+msgctxt "Geyser_Control.STRINGS.BUTTONS.RESETBUTTON.NAME"
+msgid "Reset to Original Values"
+msgstr "重置为原始值"
+
+#. Geyser_Control.STRINGS.BUTTONS.RESETBUTTON.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.BUTTONS.RESETBUTTON.TOOLTIP"
+msgid ""
+msgstr ""
+
+#. Geyser_Control.STRINGS.BUTTONS.SLIDERBUTTON.HIDE.NAME
+msgctxt "Geyser_Control.STRINGS.BUTTONS.SLIDERBUTTON.HIDE.NAME"
+msgid "Hide Slider Controls"
+msgstr "隐藏滑块控件"
+
+#. Geyser_Control.STRINGS.BUTTONS.SLIDERBUTTON.HIDE.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.BUTTONS.SLIDERBUTTON.HIDE.TOOLTIP"
+msgid ""
+msgstr ""
+
+#. Geyser_Control.STRINGS.BUTTONS.SLIDERBUTTON.SHOW.NAME
+msgctxt "Geyser_Control.STRINGS.BUTTONS.SLIDERBUTTON.SHOW.NAME"
+msgid "Show Slider Controls"
+msgstr "显示滑块控件"
+
+#. Geyser_Control.STRINGS.CHECKBOX.UNCAPPRESSURE.NAME
+msgctxt "Geyser_Control.STRINGS.CHECKBOX.UNCAPPRESSURE.NAME"
+msgid "Uncap Pressure"
+msgstr "移除压力限制"
+
+#. Geyser_Control.STRINGS.CHECKBOX.UNCAPPRESSURE.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.CHECKBOX.UNCAPPRESSURE.TOOLTIP"
+msgid "Sets Overpressure limit to 1e30 kg"
+msgstr "将过压限制设置为 1e30 千克"
+
+#. Geyser_Control.STRINGS.CONFIG.ALLOWINSTANTANALYSIS.TITLE
+msgctxt "Geyser_Control.STRINGS.CONFIG.ALLOWINSTANTANALYSIS.TITLE"
+msgid "Enable Instant Analysis"
+msgstr "启用即时分析"
+
+#. Geyser_Control.STRINGS.CONFIG.ALLOWINSTANTANALYSIS.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.CONFIG.ALLOWINSTANTANALYSIS.TOOLTIP"
+msgid "Analyzing a geyser will complete instantly with no need for a scientist.\nDatabanks still drop"
+msgstr "间歇泉的分析将立即完成，无需科学家的参与。\n数据库仍在下降"
+
+#. Geyser_Control.STRINGS.CONFIG.BREAKFACTOR.TITLE
+msgctxt "Geyser_Control.STRINGS.CONFIG.BREAKFACTOR.TITLE"
+msgid "Break Limit Factor"
+msgstr "突破限制因素"
+
+#. Geyser_Control.STRINGS.CONFIG.BREAKFACTOR.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.CONFIG.BREAKFACTOR.TOOLTIP"
+msgid "Factor by which to expand Mass Per Cycle slider limits"
+msgstr "扩大每循环质量滑块限制的因子"
+
+#. Geyser_Control.STRINGS.CONFIG.BREAKVANILLALIMITS.TITLE
+msgctxt "Geyser_Control.STRINGS.CONFIG.BREAKVANILLALIMITS.TITLE"
+msgid "Break Vanilla Limits"
+msgstr "打破原版限制"
+
+#. Geyser_Control.STRINGS.CONFIG.BREAKVANILLALIMITS.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.CONFIG.BREAKVANILLALIMITS.TOOLTIP"
+msgid "Allows values outside normal range"
+msgstr "允许值超出正常范围"
+
+#. Geyser_Control.STRINGS.CONFIG.DISABLECOOLDOWNS.TITLE
+msgctxt "Geyser_Control.STRINGS.CONFIG.DISABLECOOLDOWNS.TITLE"
+msgid "Disable Button Cooldowns and Confirmations"
+msgstr "禁用按钮冷却和确认"
+
+#. Geyser_Control.STRINGS.CONFIG.DISABLECOOLDOWNS.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.CONFIG.DISABLECOOLDOWNS.TOOLTIP"
+msgid ""
+msgstr ""
+
+#. Geyser_Control.STRINGS.CONFIG.DORMANCYBUTTON.TITLE
+msgctxt "Geyser_Control.STRINGS.CONFIG.DORMANCYBUTTON.TITLE"
+msgid "Enable Dormancy Button"
+msgstr "启用休眠按钮"
+
+#. Geyser_Control.STRINGS.CONFIG.DORMANCYBUTTON.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.CONFIG.DORMANCYBUTTON.TOOLTIP"
+msgid "Enters/Exits Dormancy"
+msgstr "进入/退出休眠"
+
+#. Geyser_Control.STRINGS.CONFIG.ERUPTIONBUTTON.TITLE
+msgctxt "Geyser_Control.STRINGS.CONFIG.ERUPTIONBUTTON.TITLE"
+msgid "Enable Eruption Button"
+msgstr "启用喷发按钮"
+
+#. Geyser_Control.STRINGS.CONFIG.ERUPTIONBUTTON.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.CONFIG.ERUPTIONBUTTON.TOOLTIP"
+msgid "Triggers the next scheduled Eruption"
+msgstr "触发下一次预定的喷发"
+
+#. Geyser_Control.STRINGS.CONFIG.RANDOMIZESLIDERSBUTTON.TITLE
+msgctxt "Geyser_Control.STRINGS.CONFIG.RANDOMIZESLIDERSBUTTON.TITLE"
+msgid "Enable Randomize Sliders Button"
+msgstr "启用随机滑块按钮"
+
+#. Geyser_Control.STRINGS.CONFIG.RANDOMIZESLIDERSBUTTON.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.CONFIG.RANDOMIZESLIDERSBUTTON.TOOLTIP"
+msgid "Sets random values for the 5 primary sliders"
+msgstr "为 5 个主要滑块设置随机值"
+
+#. Geyser_Control.STRINGS.CONFIG.RESETBUTTON.TITLE
+msgctxt "Geyser_Control.STRINGS.CONFIG.RESETBUTTON.TITLE"
+msgid "Enable Reset Button"
+msgstr "启用重置按钮"
+
+#. Geyser_Control.STRINGS.CONFIG.RESETBUTTON.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.CONFIG.RESETBUTTON.TOOLTIP"
+msgid "Allows resetting a geyser to it's originally spawned values"
+msgstr "允许将喷泉重置为其最初生成的值"
+
+#. Geyser_Control.STRINGS.CONFIG.UNCAPPRESSURECHECKBOX.TITLE
+msgctxt "Geyser_Control.STRINGS.CONFIG.UNCAPPRESSURECHECKBOX.TITLE"
+msgid "Enable Uncap Pressure Checkbox"
+msgstr "启用删除压力限制复选框"
+
+#. Geyser_Control.STRINGS.CONFIG.UNCAPPRESSURECHECKBOX.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.CONFIG.UNCAPPRESSURECHECKBOX.TOOLTIP"
+msgid "Allows 'unlimited' pressure"
+msgstr "允许“无限”压力"
+
+#. Geyser_Control.STRINGS.SLIDERS.GEYSERSLIDERS.NAME
+msgctxt "Geyser_Control.STRINGS.SLIDERS.GEYSERSLIDERS.NAME"
+msgid ""
+msgstr ""
+
+#. Geyser_Control.STRINGS.SLIDERS.ITERATIONLENGTHCONTROLLER.NAME
+msgctxt "Geyser_Control.STRINGS.SLIDERS.ITERATIONLENGTHCONTROLLER.NAME"
+msgid "Iteration Length"
+msgstr "迭代长度"
+
+#. Geyser_Control.STRINGS.SLIDERS.ITERATIONLENGTHCONTROLLER.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.SLIDERS.ITERATIONLENGTHCONTROLLER.TOOLTIP"
+msgid "Total Eruption Period including Idle"
+msgstr "包括空闲时间在内的总喷发时间"
+
+#. Geyser_Control.STRINGS.SLIDERS.ITERATIONLENGTHCONTROLLER.UNITS
+msgctxt "Geyser_Control.STRINGS.SLIDERS.ITERATIONLENGTHCONTROLLER.UNITS"
+msgid "s"
+msgstr "秒"
+
+#. Geyser_Control.STRINGS.SLIDERS.ITERATIONPERCENTCONTROLLER.NAME
+msgctxt "Geyser_Control.STRINGS.SLIDERS.ITERATIONPERCENTCONTROLLER.NAME"
+msgid "Iteration Percent"
+msgstr "迭代百分比"
+
+#. Geyser_Control.STRINGS.SLIDERS.ITERATIONPERCENTCONTROLLER.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.SLIDERS.ITERATIONPERCENTCONTROLLER.TOOLTIP"
+msgid "Percentage of Total Eruption Period to erupt"
+msgstr "喷发占总喷发期的百分比"
+
+#. Geyser_Control.STRINGS.SLIDERS.ITERATIONPERCENTCONTROLLER.UNITS
+msgctxt "Geyser_Control.STRINGS.SLIDERS.ITERATIONPERCENTCONTROLLER.UNITS"
+msgid "%"
+msgstr "%"
+
+#. Geyser_Control.STRINGS.SLIDERS.MASSPERCYCLECONTROLLER.NAME
+msgctxt "Geyser_Control.STRINGS.SLIDERS.MASSPERCYCLECONTROLLER.NAME"
+msgid "Mass Per Cycle"
+msgstr "每次循环的质量"
+
+#. Geyser_Control.STRINGS.SLIDERS.MASSPERCYCLECONTROLLER.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.SLIDERS.MASSPERCYCLECONTROLLER.TOOLTIP"
+msgid "Theoretical mass if always active"
+msgstr "如果一直打开，总输出"
+
+#. Geyser_Control.STRINGS.SLIDERS.MASSPERCYCLECONTROLLER.UNITS
+msgctxt "Geyser_Control.STRINGS.SLIDERS.MASSPERCYCLECONTROLLER.UNITS"
+msgid "kg"
+msgstr "千克"
+
+#. Geyser_Control.STRINGS.SLIDERS.YEARLENGTHCONTROLLER.NAME
+msgctxt "Geyser_Control.STRINGS.SLIDERS.YEARLENGTHCONTROLLER.NAME"
+msgid "Year Length"
+msgstr "年份长度"
+
+#. Geyser_Control.STRINGS.SLIDERS.YEARLENGTHCONTROLLER.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.SLIDERS.YEARLENGTHCONTROLLER.TOOLTIP"
+msgid "Total Life Cycle including Dormancy"
+msgstr "包括休眠在内的整个生命周期"
+
+#. Geyser_Control.STRINGS.SLIDERS.YEARLENGTHCONTROLLER.UNITS
+msgctxt "Geyser_Control.STRINGS.SLIDERS.YEARLENGTHCONTROLLER.UNITS"
+msgid "s"
+msgstr "秒"
+
+#. Geyser_Control.STRINGS.SLIDERS.YEARPERCENTCONTROLLER.NAME
+msgctxt "Geyser_Control.STRINGS.SLIDERS.YEARPERCENTCONTROLLER.NAME"
+msgid "Year Percent"
+msgstr "年份 百分比"
+
+#. Geyser_Control.STRINGS.SLIDERS.YEARPERCENTCONTROLLER.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.SLIDERS.YEARPERCENTCONTROLLER.TOOLTIP"
+msgid "Percentage of Total Life Cycle to be Active"
+msgstr "整个生命周期中处于活跃状态的百分比"
+
+#. Geyser_Control.STRINGS.SLIDERS.YEARPERCENTCONTROLLER.UNITS
+msgctxt "Geyser_Control.STRINGS.SLIDERS.YEARPERCENTCONTROLLER.UNITS"
+msgid "%"
+msgstr "%"
+

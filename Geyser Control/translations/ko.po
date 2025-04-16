@@ -1,0 +1,262 @@
+msgid ""
+msgstr ""
+"Application: Oxygen Not Included"
+"POT Version: 2.0"
+"Last-Translator: Nubula\n"
+"Language: ko\n"
+
+#. Geyser_Control.STRINGS.BUTTONS.RESETBUTTON.CONFIRM.NAME
+msgctxt "Geyser_Control.STRINGS.BUTTONS.RESETBUTTON.CONFIRM.NAME"
+msgid "CONFIRM"
+msgstr "확인"
+
+#. Geyser_Control.STRINGS.BUTTONS.DISABLED.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.BUTTONS.DISABLED.TOOLTIP"
+msgid "Analyze To Enable"
+msgstr "분석 후 사용 가능합니다."
+
+#. Geyser_Control.STRINGS.BUTTONS.DORMANCYBUTTON.ENTER.NAME
+msgctxt "Geyser_Control.STRINGS.BUTTONS.DORMANCYBUTTON.ENTER.NAME"
+msgid "Enter Dormancy"
+msgstr "휴면 상태로 전환"
+
+#. Geyser_Control.STRINGS.BUTTONS.DORMANCYBUTTON.ENTER.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.BUTTONS.DORMANCYBUTTON.ENTER.TOOLTIP"
+msgid ""
+msgstr ""
+
+#. Geyser_Control.STRINGS.BUTTONS.DORMANCYBUTTON.EXIT.NAME
+msgctxt "Geyser_Control.STRINGS.BUTTONS.DORMANCYBUTTON.EXIT.NAME"
+msgid "Exit Dormancy"
+msgstr "휴면 상태 종료"
+
+#. Geyser_Control.STRINGS.BUTTONS.DORMANCYBUTTON.EXIT.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.BUTTONS.DORMANCYBUTTON.EXIT.TOOLTIP"
+msgid ""
+msgstr ""
+
+#. Geyser_Control.STRINGS.BUTTONS.ERUPTIONBUTTON.NAME
+msgctxt "Geyser_Control.STRINGS.BUTTONS.ERUPTIONBUTTON.NAME"
+msgid "Advance To Next Eruption"
+msgstr "분출 시작"
+
+#. Geyser_Control.STRINGS.BUTTONS.ERUPTIONBUTTON.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.BUTTONS.ERUPTIONBUTTON.TOOLTIP"
+msgid ""
+msgstr ""
+
+#. Geyser_Control.STRINGS.BUTTONS.RANDOMIZESLIDERSBUTTON.NAME
+msgctxt "Geyser_Control.STRINGS.BUTTONS.RANDOMIZESLIDERSBUTTON.NAME"
+msgid "Randomize Values"
+msgstr "무작위 값으로 설정"
+
+#. Geyser_Control.STRINGS.BUTTONS.RANDOMIZESLIDERSBUTTON.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.BUTTONS.RANDOMIZESLIDERSBUTTON.TOOLTIP"
+msgid "Sets random values for the 5 primary sliders"
+msgstr "5개의 변수를 무작위 값으로 설정합니다."
+
+#. Geyser_Control.STRINGS.BUTTONS.RESETBUTTON.NAME
+msgctxt "Geyser_Control.STRINGS.BUTTONS.RESETBUTTON.NAME"
+msgid "Reset to Original Values"
+msgstr "설정 값 초기화"
+
+#. Geyser_Control.STRINGS.BUTTONS.RESETBUTTON.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.BUTTONS.RESETBUTTON.TOOLTIP"
+msgid ""
+msgstr ""
+
+#. Geyser_Control.STRINGS.BUTTONS.SLIDERBUTTON.HIDE.NAME
+msgctxt "Geyser_Control.STRINGS.BUTTONS.SLIDERBUTTON.HIDE.NAME"
+msgid "Hide Slider Controls"
+msgstr "세부 설정 숨기기"
+
+#. Geyser_Control.STRINGS.BUTTONS.SLIDERBUTTON.HIDE.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.BUTTONS.SLIDERBUTTON.HIDE.TOOLTIP"
+msgid ""
+msgstr ""
+
+#. Geyser_Control.STRINGS.BUTTONS.SLIDERBUTTON.SHOW.NAME
+msgctxt "Geyser_Control.STRINGS.BUTTONS.SLIDERBUTTON.SHOW.NAME"
+msgid "Show Slider Controls"
+msgstr "세부 설정 표시"
+
+#. Geyser_Control.STRINGS.CHECKBOX.UNCAPPRESSURE.NAME
+msgctxt "Geyser_Control.STRINGS.CHECKBOX.UNCAPPRESSURE.NAME"
+msgid "Uncap Pressure"
+msgstr "압력 한계 제거"
+
+#. Geyser_Control.STRINGS.CHECKBOX.UNCAPPRESSURE.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.CHECKBOX.UNCAPPRESSURE.TOOLTIP"
+msgid "Sets Overpressure limit to 1e30 kg"
+msgstr "압력 한계를 1e30킬로그램 으로 설정합니다."
+
+#. Geyser_Control.STRINGS.CONFIG.ALLOWINSTANTANALYSIS.TITLE
+msgctxt "Geyser_Control.STRINGS.CONFIG.ALLOWINSTANTANALYSIS.TITLE"
+msgid "Enable Instant Analysis"
+msgstr "즉시 분석 완료"
+
+#. Geyser_Control.STRINGS.CONFIG.ALLOWINSTANTANALYSIS.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.CONFIG.ALLOWINSTANTANALYSIS.TOOLTIP"
+msgid "Analyzing a geyser will complete instantly with no need for a scientist.\nDatabanks still drop"
+msgstr "연구 복제체의 작업과는 상관없이 즉시 분석을 완료합니다.\n측정 자료는 여전히 생성됩니다."
+
+#. Geyser_Control.STRINGS.CONFIG.BREAKFACTOR.TITLE
+msgctxt "Geyser_Control.STRINGS.CONFIG.BREAKFACTOR.TITLE"
+msgid "Break Limit Factor"
+msgstr "제한 해제 변수"
+
+#. Geyser_Control.STRINGS.CONFIG.BREAKFACTOR.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.CONFIG.BREAKFACTOR.TOOLTIP"
+msgid "Factor by which to expand Mass Per Cycle slider limits"
+msgstr "주기당 분출 질량 한계를 결정합니다."
+
+#. Geyser_Control.STRINGS.CONFIG.BREAKVANILLALIMITS.TITLE
+msgctxt "Geyser_Control.STRINGS.CONFIG.BREAKVANILLALIMITS.TITLE"
+msgid "Break Vanilla Limits"
+msgstr "값 제한 해제"
+
+#. Geyser_Control.STRINGS.CONFIG.BREAKVANILLALIMITS.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.CONFIG.BREAKVANILLALIMITS.TOOLTIP"
+msgid "Allows values outside normal range"
+msgstr "정상 범위를 벗어난 값을 허용합니다."
+
+#. Geyser_Control.STRINGS.CONFIG.DISABLECOOLDOWNS.TITLE
+msgctxt "Geyser_Control.STRINGS.CONFIG.DISABLECOOLDOWNS.TITLE"
+msgid "Disable Button Cooldowns and Confirmations"
+msgstr "버튼의 재사용 대기시간 및 재확인 비활성화"
+
+#. Geyser_Control.STRINGS.CONFIG.DISABLECOOLDOWNS.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.CONFIG.DISABLECOOLDOWNS.TOOLTIP"
+msgid ""
+msgstr ""
+
+#. Geyser_Control.STRINGS.CONFIG.DORMANCYBUTTON.TITLE
+msgctxt "Geyser_Control.STRINGS.CONFIG.DORMANCYBUTTON.TITLE"
+msgid "Enable Dormancy Button"
+msgstr "휴면 기능 활성화"
+
+#. Geyser_Control.STRINGS.CONFIG.DORMANCYBUTTON.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.CONFIG.DORMANCYBUTTON.TOOLTIP"
+msgid "Enters/Exits Dormancy"
+msgstr "간헐천을 휴면 상태로 변화시키거나 휴면 상태를 끝낼 수 있습니다."
+
+#. Geyser_Control.STRINGS.CONFIG.ERUPTIONBUTTON.TITLE
+msgctxt "Geyser_Control.STRINGS.CONFIG.ERUPTIONBUTTON.TITLE"
+msgid "Enable Eruption Button"
+msgstr "분출 기능 활성화"
+
+#. Geyser_Control.STRINGS.CONFIG.ERUPTIONBUTTON.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.CONFIG.ERUPTIONBUTTON.TOOLTIP"
+msgid "Triggers the next scheduled Eruption"
+msgstr "간헐천의 다음 분출을 즉시 시행합니다."
+
+#. Geyser_Control.STRINGS.CONFIG.RANDOMIZESLIDERSBUTTON.TITLE
+msgctxt "Geyser_Control.STRINGS.CONFIG.RANDOMIZESLIDERSBUTTON.TITLE"
+msgid "Enable Randomize Sliders Button"
+msgstr "무작위 값으로 설정 기능 활성화"
+
+#. Geyser_Control.STRINGS.CONFIG.RANDOMIZESLIDERSBUTTON.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.CONFIG.RANDOMIZESLIDERSBUTTON.TOOLTIP"
+msgid "Sets random values for the 5 primary sliders"
+msgstr "5개의 변수를 무작위 값으로 설정합니다."
+
+#. Geyser_Control.STRINGS.CONFIG.RESETBUTTON.TITLE
+msgctxt "Geyser_Control.STRINGS.CONFIG.RESETBUTTON.TITLE"
+msgid "Enable Reset Button"
+msgstr "초기화 버튼 활성화"
+
+#. Geyser_Control.STRINGS.CONFIG.RESETBUTTON.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.CONFIG.RESETBUTTON.TOOLTIP"
+msgid "Allows resetting a geyser to it's originally spawned values"
+msgstr "간헐천이 초기에 설정되었던 값으로 재설정합니다."
+
+#. Geyser_Control.STRINGS.CONFIG.UNCAPPRESSURECHECKBOX.TITLE
+msgctxt "Geyser_Control.STRINGS.CONFIG.UNCAPPRESSURECHECKBOX.TITLE"
+msgid "Enable Uncap Pressure Checkbox"
+msgstr "압력 한계 제거 체크박스 활성화"
+
+#. Geyser_Control.STRINGS.CONFIG.UNCAPPRESSURECHECKBOX.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.CONFIG.UNCAPPRESSURECHECKBOX.TOOLTIP"
+msgid "Allows 'unlimited' pressure"
+msgstr "압력 제한을 제거합니다."
+
+#. Geyser_Control.STRINGS.SLIDERS.GEYSERSLIDERS.NAME
+msgctxt "Geyser_Control.STRINGS.SLIDERS.GEYSERSLIDERS.NAME"
+msgid ""
+msgstr ""
+
+#. Geyser_Control.STRINGS.SLIDERS.ITERATIONLENGTHCONTROLLER.NAME
+msgctxt "Geyser_Control.STRINGS.SLIDERS.ITERATIONLENGTHCONTROLLER.NAME"
+msgid "Iteration Length"
+msgstr "분출 주기"
+
+#. Geyser_Control.STRINGS.SLIDERS.ITERATIONLENGTHCONTROLLER.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.SLIDERS.ITERATIONLENGTHCONTROLLER.TOOLTIP"
+msgid "Total Eruption Period including Idle"
+msgstr "휴지기를 포함한 총 분출 시간입니다."
+
+#. Geyser_Control.STRINGS.SLIDERS.ITERATIONLENGTHCONTROLLER.UNITS
+msgctxt "Geyser_Control.STRINGS.SLIDERS.ITERATIONLENGTHCONTROLLER.UNITS"
+msgid "s"
+msgstr "초"
+
+#. Geyser_Control.STRINGS.SLIDERS.ITERATIONPERCENTCONTROLLER.NAME
+msgctxt "Geyser_Control.STRINGS.SLIDERS.ITERATIONPERCENTCONTROLLER.NAME"
+msgid "Iteration Percent"
+msgstr "분출 비율"
+
+#. Geyser_Control.STRINGS.SLIDERS.ITERATIONPERCENTCONTROLLER.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.SLIDERS.ITERATIONPERCENTCONTROLLER.TOOLTIP"
+msgid "Percentage of Total Eruption Period to erupt"
+msgstr "분출 주기 중 분출 시간의 비율입니다."
+
+#. Geyser_Control.STRINGS.SLIDERS.ITERATIONPERCENTCONTROLLER.UNITS
+msgctxt "Geyser_Control.STRINGS.SLIDERS.ITERATIONPERCENTCONTROLLER.UNITS"
+msgid "%"
+msgstr "%"
+
+#. Geyser_Control.STRINGS.SLIDERS.MASSPERCYCLECONTROLLER.NAME
+msgctxt "Geyser_Control.STRINGS.SLIDERS.MASSPERCYCLECONTROLLER.NAME"
+msgid "Mass Per Cycle"
+msgstr "주기당 분출량"
+
+#. Geyser_Control.STRINGS.SLIDERS.MASSPERCYCLECONTROLLER.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.SLIDERS.MASSPERCYCLECONTROLLER.TOOLTIP"
+msgid "Theoretical mass if always active"
+msgstr "항상 분출 중인 경우의 이론상 질량입니다."
+
+#. Geyser_Control.STRINGS.SLIDERS.MASSPERCYCLECONTROLLER.UNITS
+msgctxt "Geyser_Control.STRINGS.SLIDERS.MASSPERCYCLECONTROLLER.UNITS"
+msgid "kg"
+msgstr "킬로그램"
+
+#. Geyser_Control.STRINGS.SLIDERS.YEARLENGTHCONTROLLER.NAME
+msgctxt "Geyser_Control.STRINGS.SLIDERS.YEARLENGTHCONTROLLER.NAME"
+msgid "Year Length"
+msgstr "전체 주기"
+
+#. Geyser_Control.STRINGS.SLIDERS.YEARLENGTHCONTROLLER.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.SLIDERS.YEARLENGTHCONTROLLER.TOOLTIP"
+msgid "Total Life Cycle including Dormancy"
+msgstr "휴면기를 포함한 전체 주기입니다."
+
+#. Geyser_Control.STRINGS.SLIDERS.YEARLENGTHCONTROLLER.UNITS
+msgctxt "Geyser_Control.STRINGS.SLIDERS.YEARLENGTHCONTROLLER.UNITS"
+msgid "s"
+msgstr "초"
+
+#. Geyser_Control.STRINGS.SLIDERS.YEARPERCENTCONTROLLER.NAME
+msgctxt "Geyser_Control.STRINGS.SLIDERS.YEARPERCENTCONTROLLER.NAME"
+msgid "Year Percent"
+msgstr "활동 주기 비율"
+
+#. Geyser_Control.STRINGS.SLIDERS.YEARPERCENTCONTROLLER.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.SLIDERS.YEARPERCENTCONTROLLER.TOOLTIP"
+msgid "Percentage of Total Life Cycle to be Active"
+msgstr "전체 주기 중 활동 주기의 비율입니다."
+
+#. Geyser_Control.STRINGS.SLIDERS.YEARPERCENTCONTROLLER.UNITS
+msgctxt "Geyser_Control.STRINGS.SLIDERS.YEARPERCENTCONTROLLER.UNITS"
+msgid "%"
+msgstr "%"
+
