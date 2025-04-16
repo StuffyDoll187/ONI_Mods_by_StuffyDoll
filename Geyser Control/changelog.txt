@@ -1,0 +1,20 @@
+1.0.4
+Fixed crash related to Uncap Pressure and Geotuners.
+Modified Korean Translation with user submission. (Nubula01)
+
+1.0.3
+Updated for March 2025 Quality of Life Update.
+
+1.0.2
+Decoupled Uncap Pressure Checkbox from any Analysis requirement to prevent unintended behavior.
+
+1.0.1
+Removed extraneous selection sounds.
+Added Uncap Pressure Checkbox.
+Added Randomize Values Button.
+Improved Button Cooldown and Confirmation functionality.
+Added option to disable Cooldowns and Confirmations.
+
+
+1.0.0
+Initial Release
