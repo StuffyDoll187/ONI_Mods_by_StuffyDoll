@@ -21,7 +21,7 @@ namespace Geyser_Control
         [Serialize]
         public GeyserConfigurator.GeyserInstanceConfiguration newconfig;
         [Serialize]
-        public Geyser.GeyserModification modification = new Geyser.GeyserModification();
+        public Geyser.GeyserModification modification = new Geyser.GeyserModification() { originID = "GeyserControl"};
         [Serialize]
         public bool slidersSet;
         [Serialize]
@@ -32,6 +32,10 @@ namespace Geyser_Control
         protected override void OnSpawn()
         {
             base.OnSpawn();
+
+            if (modification.originID == null)
+                modification.originID = "GeyserControl";
+            
             if (studyable.Studied && slidersSet)
             {
                 geyser.smi.StopSM("Resync SM with new time values");
