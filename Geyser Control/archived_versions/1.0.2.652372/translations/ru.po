@@ -1,0 +1,260 @@
+msgid ""
+msgstr ""
+"Application: Oxygen Not Included"
+"POT Version: 2.0"
+
+#. Geyser_Control.STRINGS.BUTTONS.CONFIRM.NAME
+msgctxt "Geyser_Control.STRINGS.BUTTONS.CONFIRM.NAME"
+msgid "CONFIRM"
+msgstr "ПОДТВЕРЖДАТЬ"
+
+#. Geyser_Control.STRINGS.BUTTONS.DISABLED.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.BUTTONS.DISABLED.TOOLTIP"
+msgid "Analyze To Enable"
+msgstr "Проанализируйте, чтобы включить"
+
+#. Geyser_Control.STRINGS.BUTTONS.DORMANCYBUTTON.ENTER.NAME
+msgctxt "Geyser_Control.STRINGS.BUTTONS.DORMANCYBUTTON.ENTER.NAME"
+msgid "Enter Dormancy"
+msgstr "Войти в спячку"
+
+#. Geyser_Control.STRINGS.BUTTONS.DORMANCYBUTTON.ENTER.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.BUTTONS.DORMANCYBUTTON.ENTER.TOOLTIP"
+msgid ""
+msgstr ""
+
+#. Geyser_Control.STRINGS.BUTTONS.DORMANCYBUTTON.EXIT.NAME
+msgctxt "Geyser_Control.STRINGS.BUTTONS.DORMANCYBUTTON.EXIT.NAME"
+msgid "Exit Dormancy"
+msgstr "Выход из состояния покоя"
+
+#. Geyser_Control.STRINGS.BUTTONS.DORMANCYBUTTON.EXIT.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.BUTTONS.DORMANCYBUTTON.EXIT.TOOLTIP"
+msgid ""
+msgstr ""
+
+#. Geyser_Control.STRINGS.BUTTONS.ERUPTIONBUTTON.NAME
+msgctxt "Geyser_Control.STRINGS.BUTTONS.ERUPTIONBUTTON.NAME"
+msgid "Advance To Next Eruption"
+msgstr "Переход к следующему извержению"
+
+#. Geyser_Control.STRINGS.BUTTONS.ERUPTIONBUTTON.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.BUTTONS.ERUPTIONBUTTON.TOOLTIP"
+msgid ""
+msgstr ""
+
+#. Geyser_Control.STRINGS.BUTTONS.RANDOMIZESLIDERSBUTTON.NAME
+msgctxt "Geyser_Control.STRINGS.BUTTONS.RANDOMIZESLIDERSBUTTON.NAME"
+msgid "Randomize Values"
+msgstr "Рандомизировать значения"
+
+#. Geyser_Control.STRINGS.BUTTONS.RANDOMIZESLIDERSBUTTON.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.BUTTONS.RANDOMIZESLIDERSBUTTON.TOOLTIP"
+msgid "Sets random values for the 5 primary sliders"
+msgstr "Устанавливает случайные значения для 5 основных ползунков"
+
+#. Geyser_Control.STRINGS.BUTTONS.RESETBUTTON.NAME
+msgctxt "Geyser_Control.STRINGS.BUTTONS.RESETBUTTON.NAME"
+msgid "Reset to Original Values"
+msgstr "Сброс к исходным значениям"
+
+#. Geyser_Control.STRINGS.BUTTONS.RESETBUTTON.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.BUTTONS.RESETBUTTON.TOOLTIP"
+msgid ""
+msgstr ""
+
+#. Geyser_Control.STRINGS.BUTTONS.SLIDERBUTTON.HIDE.NAME
+msgctxt "Geyser_Control.STRINGS.BUTTONS.SLIDERBUTTON.HIDE.NAME"
+msgid "Hide Slider Controls"
+msgstr "Скрыть элементы управления ползунком"
+
+#. Geyser_Control.STRINGS.BUTTONS.SLIDERBUTTON.HIDE.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.BUTTONS.SLIDERBUTTON.HIDE.TOOLTIP"
+msgid ""
+msgstr ""
+
+#. Geyser_Control.STRINGS.BUTTONS.SLIDERBUTTON.SHOW.NAME
+msgctxt "Geyser_Control.STRINGS.BUTTONS.SLIDERBUTTON.SHOW.NAME"
+msgid "Show Slider Controls"
+msgstr "Показать элементы управления ползунком"
+
+#. Geyser_Control.STRINGS.CHECKBOX.UNCAPPRESSURE.NAME
+msgctxt "Geyser_Control.STRINGS.CHECKBOX.UNCAPPRESSURE.NAME"
+msgid "Uncap Pressure"
+msgstr "удалить предел давления"
+
+#. Geyser_Control.STRINGS.CHECKBOX.UNCAPPRESSURE.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.CHECKBOX.UNCAPPRESSURE.TOOLTIP"
+msgid "Sets Overpressure limit to 1e30 kg"
+msgstr "Устанавливает предел избыточного давления 1e30 кг"
+
+#. Geyser_Control.STRINGS.CONFIG.ALLOWINSTANTANALYSIS.TITLE
+msgctxt "Geyser_Control.STRINGS.CONFIG.ALLOWINSTANTANALYSIS.TITLE"
+msgid "Enable Instant Analysis"
+msgstr "Включить мгновенный анализ"
+
+#. Geyser_Control.STRINGS.CONFIG.ALLOWINSTANTANALYSIS.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.CONFIG.ALLOWINSTANTANALYSIS.TOOLTIP"
+msgid "Analyzing a geyser will complete instantly with no need for a scientist.\nDatabanks still drop"
+msgstr "Анализ гейзера завершится мгновенно, без участия ученого.\nБанки данных все еще падают"
+
+#. Geyser_Control.STRINGS.CONFIG.BREAKFACTOR.TITLE
+msgctxt "Geyser_Control.STRINGS.CONFIG.BREAKFACTOR.TITLE"
+msgid "Break Limit Factor"
+msgstr "Фактор ограничения разрыва"
+
+#. Geyser_Control.STRINGS.CONFIG.BREAKFACTOR.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.CONFIG.BREAKFACTOR.TOOLTIP"
+msgid "Factor by which to expand Mass Per Cycle slider limits"
+msgstr "Коэффициент, на который следует расширить пределы ползунка «Масса за цикл»"
+
+#. Geyser_Control.STRINGS.CONFIG.BREAKVANILLALIMITS.TITLE
+msgctxt "Geyser_Control.STRINGS.CONFIG.BREAKVANILLALIMITS.TITLE"
+msgid "Break Vanilla Limits"
+msgstr "сломать ванильные ограничения"
+
+#. Geyser_Control.STRINGS.CONFIG.BREAKVANILLALIMITS.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.CONFIG.BREAKVANILLALIMITS.TOOLTIP"
+msgid "Allows values outside normal range"
+msgstr "Допускает значения, выходящие за пределы нормального диапазона"
+
+#. Geyser_Control.STRINGS.CONFIG.DISABLECOOLDOWNS.TITLE
+msgctxt "Geyser_Control.STRINGS.CONFIG.DISABLECOOLDOWNS.TITLE"
+msgid "Disable Button Cooldowns and Confirmations"
+msgstr "Отключить кулдауны и подтверждения"
+
+#. Geyser_Control.STRINGS.CONFIG.DISABLECOOLDOWNS.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.CONFIG.DISABLECOOLDOWNS.TOOLTIP"
+msgid ""
+msgstr ""
+
+#. Geyser_Control.STRINGS.CONFIG.DORMANCYBUTTON.TITLE
+msgctxt "Geyser_Control.STRINGS.CONFIG.DORMANCYBUTTON.TITLE"
+msgid "Enable Dormancy Button"
+msgstr "Кнопка «Включить спящий режим»"
+
+#. Geyser_Control.STRINGS.CONFIG.DORMANCYBUTTON.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.CONFIG.DORMANCYBUTTON.TOOLTIP"
+msgid "Enters/Exits Dormancy"
+msgstr "Входит/Выходит из состояния покоя"
+
+#. Geyser_Control.STRINGS.CONFIG.ERUPTIONBUTTON.TITLE
+msgctxt "Geyser_Control.STRINGS.CONFIG.ERUPTIONBUTTON.TITLE"
+msgid "Enable Eruption Button"
+msgstr "Включить кнопку извержения"
+
+#. Geyser_Control.STRINGS.CONFIG.ERUPTIONBUTTON.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.CONFIG.ERUPTIONBUTTON.TOOLTIP"
+msgid "Triggers the next scheduled Eruption"
+msgstr "Вызывает следующее запланированное извержение"
+
+#. Geyser_Control.STRINGS.CONFIG.RANDOMIZESLIDERSBUTTON.TITLE
+msgctxt "Geyser_Control.STRINGS.CONFIG.RANDOMIZESLIDERSBUTTON.TITLE"
+msgid "Enable Randomize Sliders Button"
+msgstr "Включить кнопку «Случайный выбор ползунков»"
+
+#. Geyser_Control.STRINGS.CONFIG.RANDOMIZESLIDERSBUTTON.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.CONFIG.RANDOMIZESLIDERSBUTTON.TOOLTIP"
+msgid "Sets random values for the 5 primary sliders"
+msgstr "Устанавливает случайные значения для 5 основных ползунков"
+
+#. Geyser_Control.STRINGS.CONFIG.RESETBUTTON.TITLE
+msgctxt "Geyser_Control.STRINGS.CONFIG.RESETBUTTON.TITLE"
+msgid "Enable Reset Button"
+msgstr "Включить кнопку сброса"
+
+#. Geyser_Control.STRINGS.CONFIG.RESETBUTTON.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.CONFIG.RESETBUTTON.TOOLTIP"
+msgid "Allows resetting a geyser to it's originally spawned values"
+msgstr "Позволяет сбросить гейзер до его изначально созданных значений."
+
+#. Geyser_Control.STRINGS.CONFIG.UNCAPPRESSURECHECKBOX.TITLE
+msgctxt "Geyser_Control.STRINGS.CONFIG.UNCAPPRESSURECHECKBOX.TITLE"
+msgid "Enable Uncap Pressure Checkbox"
+msgstr "Включите флажок «Удалить ограничение давления»"
+
+#. Geyser_Control.STRINGS.CONFIG.UNCAPPRESSURECHECKBOX.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.CONFIG.UNCAPPRESSURECHECKBOX.TOOLTIP"
+msgid "Allows 'unlimited' pressure"
+msgstr "Позволяет оказывать «неограниченное» давление"
+
+#. Geyser_Control.STRINGS.SLIDERS.GEYSERSLIDERS.NAME
+msgctxt "Geyser_Control.STRINGS.SLIDERS.GEYSERSLIDERS.NAME"
+msgid ""
+msgstr ""
+
+#. Geyser_Control.STRINGS.SLIDERS.ITERATIONLENGTHCONTROLLER.NAME
+msgctxt "Geyser_Control.STRINGS.SLIDERS.ITERATIONLENGTHCONTROLLER.NAME"
+msgid "Iteration Length"
+msgstr "Длина итерации"
+
+#. Geyser_Control.STRINGS.SLIDERS.ITERATIONLENGTHCONTROLLER.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.SLIDERS.ITERATIONLENGTHCONTROLLER.TOOLTIP"
+msgid "Total Eruption Period including Idle"
+msgstr "Общий период извержения, включая холостой ход"
+
+#. Geyser_Control.STRINGS.SLIDERS.ITERATIONLENGTHCONTROLLER.UNITS
+msgctxt "Geyser_Control.STRINGS.SLIDERS.ITERATIONLENGTHCONTROLLER.UNITS"
+msgid "s"
+msgstr "секунд"
+
+#. Geyser_Control.STRINGS.SLIDERS.ITERATIONPERCENTCONTROLLER.NAME
+msgctxt "Geyser_Control.STRINGS.SLIDERS.ITERATIONPERCENTCONTROLLER.NAME"
+msgid "Iteration Percent"
+msgstr "Процент итерации"
+
+#. Geyser_Control.STRINGS.SLIDERS.ITERATIONPERCENTCONTROLLER.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.SLIDERS.ITERATIONPERCENTCONTROLLER.TOOLTIP"
+msgid "Percentage of Total Eruption Period to erupt"
+msgstr "Процент от общего периода извержения до извержения"
+
+#. Geyser_Control.STRINGS.SLIDERS.ITERATIONPERCENTCONTROLLER.UNITS
+msgctxt "Geyser_Control.STRINGS.SLIDERS.ITERATIONPERCENTCONTROLLER.UNITS"
+msgid "%"
+msgstr "%"
+
+#. Geyser_Control.STRINGS.SLIDERS.MASSPERCYCLECONTROLLER.NAME
+msgctxt "Geyser_Control.STRINGS.SLIDERS.MASSPERCYCLECONTROLLER.NAME"
+msgid "Mass Per Cycle"
+msgstr "Масса за цикл"
+
+#. Geyser_Control.STRINGS.SLIDERS.MASSPERCYCLECONTROLLER.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.SLIDERS.MASSPERCYCLECONTROLLER.TOOLTIP"
+msgid "Theoretical mass if always active"
+msgstr "Теоретическая масса, если она всегда активна"
+
+#. Geyser_Control.STRINGS.SLIDERS.MASSPERCYCLECONTROLLER.UNITS
+msgctxt "Geyser_Control.STRINGS.SLIDERS.MASSPERCYCLECONTROLLER.UNITS"
+msgid "kg"
+msgstr "килограмм"
+
+#. Geyser_Control.STRINGS.SLIDERS.YEARLENGTHCONTROLLER.NAME
+msgctxt "Geyser_Control.STRINGS.SLIDERS.YEARLENGTHCONTROLLER.NAME"
+msgid "Year Length"
+msgstr "Продолжительность года"
+
+#. Geyser_Control.STRINGS.SLIDERS.YEARLENGTHCONTROLLER.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.SLIDERS.YEARLENGTHCONTROLLER.TOOLTIP"
+msgid "Total Life Cycle including Dormancy"
+msgstr "Полный жизненный цикл, включая покой"
+
+#. Geyser_Control.STRINGS.SLIDERS.YEARLENGTHCONTROLLER.UNITS
+msgctxt "Geyser_Control.STRINGS.SLIDERS.YEARLENGTHCONTROLLER.UNITS"
+msgid "s"
+msgstr "секунд"
+
+#. Geyser_Control.STRINGS.SLIDERS.YEARPERCENTCONTROLLER.NAME
+msgctxt "Geyser_Control.STRINGS.SLIDERS.YEARPERCENTCONTROLLER.NAME"
+msgid "Year Percent"
+msgstr "Год Процент"
+
+#. Geyser_Control.STRINGS.SLIDERS.YEARPERCENTCONTROLLER.TOOLTIP
+msgctxt "Geyser_Control.STRINGS.SLIDERS.YEARPERCENTCONTROLLER.TOOLTIP"
+msgid "Percentage of Total Life Cycle to be Active"
+msgstr "Процент от общего жизненного цикла, который будет активным"
+
+#. Geyser_Control.STRINGS.SLIDERS.YEARPERCENTCONTROLLER.UNITS
+msgctxt "Geyser_Control.STRINGS.SLIDERS.YEARPERCENTCONTROLLER.UNITS"
+msgid "%"
+msgstr "%"
+
