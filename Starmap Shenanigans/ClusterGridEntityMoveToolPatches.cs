@@ -17,6 +17,11 @@ namespace Starmap_Shenanigans
             public static FieldInfo m_selected = AccessTools.Field(typeof(ClusterMapSelectTool), "m_selected");
             public static void Postfix(bool debugEnabled)
             {
+
+                if (MainMenu.Instance.IsActive())
+                    return;
+
+
                 if (debugEnabled)
                 {
                     if (ClusterGridEntityMoveTool.Instance.isClusterMapScreenActive)
