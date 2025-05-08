@@ -5,10 +5,10 @@ namespace Starmap_Shenanigans
     class DestroyPOIButton : KMonoBehaviour, ISidescreenButtonControl
     {
         public string SidescreenButtonText { get => "DESTROY"; }
-        public string SidescreenButtonTooltip { get => "Deletes this object from existence."; }
+        public string SidescreenButtonTooltip { get => DebugHandler.enabled ? "Deletes this object from existence." : "Must Enable Debug Mode"; }
         public void SetButtonTextOverride(ButtonMenuTextOverride textOverride) { }
-        public bool SidescreenEnabled() => true;
-        public bool SidescreenButtonInteractable() => true;
+        public bool SidescreenEnabled() => DebugHandler.enabled;
+        public bool SidescreenButtonInteractable() => DebugHandler.enabled;
         public void OnSidescreenButtonPressed()
         {
             gameObject.DeleteObject();
@@ -20,8 +20,8 @@ namespace Starmap_Shenanigans
         {
             public static void Postfix(ClusterGridEntity __instance)
             {
-                if (!DebugHandler.enabled)
-                    return;
+                //if (!DebugHandler.enabled)
+                   // return;
                 if (__instance.TryGetComponent(out HarvestablePOIClusterGridEntity _) || __instance.TryGetComponent(out ArtifactPOIClusterGridEntity _) )// || __instance.TryGetComponent(out ClusterMapMeteorShowerVisualizer _))
                 {
                     __instance.FindOrAddComponent<DestroyPOIButton>();                

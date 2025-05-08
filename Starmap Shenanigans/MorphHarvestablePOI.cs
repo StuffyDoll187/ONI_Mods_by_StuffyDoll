@@ -30,7 +30,7 @@ namespace Starmap_Shenanigans
             }            
         }
         public FewOptionSideScreen.IFewOptionSideScreen.Option[] GetOptions()
-        {           
+        {            
             FewOptionSideScreen.IFewOptionSideScreen.Option[] options = new FewOptionSideScreen.IFewOptionSideScreen.Option[POITypeIds.Count];
             for (int i = 0; i < options.Length; ++i)
             {
@@ -57,6 +57,7 @@ namespace Starmap_Shenanigans
             }          
             return options;
         }
+        
         public void OnOptionSelected(
           FewOptionSideScreen.IFewOptionSideScreen.Option option)
         {
@@ -66,8 +67,8 @@ namespace Starmap_Shenanigans
         public string SidescreenButtonText { get => "Morph!"; }
         public string SidescreenButtonTooltip { get => "Replaces the current POI with one selected from below."; }
         public void SetButtonTextOverride(ButtonMenuTextOverride textOverride) { }
-        public bool SidescreenEnabled() => true;
-        public bool SidescreenButtonInteractable() => true;
+        public bool SidescreenEnabled() => DebugHandler.enabled;
+        public bool SidescreenButtonInteractable() => DebugHandler.enabled;
         public void OnSidescreenButtonPressed()
         {            
             if (selectedOption == null)
@@ -93,8 +94,8 @@ namespace Starmap_Shenanigans
         public string SidescreenButtonText { get => "Duplicate"; }
         public string SidescreenButtonTooltip { get => "Spawns a new instance of this POI at this location"; }
         public void SetButtonTextOverride(ButtonMenuTextOverride textOverride) { }
-        public bool SidescreenEnabled() => true;
-        public bool SidescreenButtonInteractable() => true;
+        public bool SidescreenEnabled() => DebugHandler.enabled;
+        public bool SidescreenButtonInteractable() => DebugHandler.enabled;
         public void OnSidescreenButtonPressed()
         {
             var go = Util.KInstantiate(Assets.GetPrefab(MorphHarvestablePOI.POIClusterEntity.name));

@@ -55,13 +55,13 @@ namespace Starmap_Shenanigans
         }
         public Tag GetSelectedOption() => selectedOption;
         public string SidescreenButtonText { get => "Morph!"; }
-        public string SidescreenButtonTooltip { get => "Replaces the current POI with one selected from below."; }
+        public string SidescreenButtonTooltip { get => DebugHandler.enabled ? "Replaces the current POI with one selected from below." : "Must Enable Debug Mode"; }
         public void SetButtonTextOverride(ButtonMenuTextOverride textOverride) { }
-        public bool SidescreenEnabled() => true;
-        public bool SidescreenButtonInteractable() => true;
+        public bool SidescreenEnabled() => DebugHandler.enabled;
+        public bool SidescreenButtonInteractable() => DebugHandler.enabled;
         public void OnSidescreenButtonPressed()
         {
-            Debug.Log(selectedOption);
+            //Debug.Log(selectedOption);
             if (selectedOption == null)
                 return;
             var prefab = Assets.TryGetPrefab(selectedOption);
@@ -83,10 +83,10 @@ namespace Starmap_Shenanigans
         [MyCmpGet]
         MorphArtifactPOI MorphArtifactPOI;
         public string SidescreenButtonText { get => "Duplicate"; }
-        public string SidescreenButtonTooltip { get => "Spawns a new instance of this POI at this location"; }
+        public string SidescreenButtonTooltip { get => DebugHandler.enabled ? "Spawns a new instance of this POI at this location" : "Must Enable Debug Mode"; }
         public void SetButtonTextOverride(ButtonMenuTextOverride textOverride) { }
-        public bool SidescreenEnabled() => true;
-        public bool SidescreenButtonInteractable() => true;
+        public bool SidescreenEnabled() => DebugHandler.enabled;
+        public bool SidescreenButtonInteractable() => DebugHandler.enabled;
         public void OnSidescreenButtonPressed()
         {
             var go = Util.KInstantiate(Assets.GetPrefab(MorphArtifactPOI.POIClusterEntity.name));

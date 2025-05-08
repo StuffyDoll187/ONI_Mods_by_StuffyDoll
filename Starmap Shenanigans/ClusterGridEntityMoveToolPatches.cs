@@ -3,24 +3,77 @@ using System;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using System.Reflection;
 
 namespace Starmap_Shenanigans
 {
     public class ClusterGridEntityMoveToolPatches
     {
+
+        
+        [HarmonyPatch(typeof(DebugHandler), nameof(DebugHandler.SetDebugEnabled))]
+        public class DebugHandler_SetDebugEnabled_Patch
+        {
+            public static FieldInfo m_selected = AccessTools.Field(typeof(ClusterMapSelectTool), "m_selected");
+            public static void Postfix(bool debugEnabled)
+            {
+                if (debugEnabled)
+                {
+                    if (ClusterGridEntityMoveTool.Instance.isClusterMapScreenActive)
+                    {
+                        Add_Debug_Button.ClusterGridEntityMoveButton.ChangeState(1);
+                        Add_Debug_Button.ClusterGridEntityMoveButtonTooltip.SetSimpleTooltip("");
+
+                        var kSelectable = m_selected.GetValue(ClusterMapSelectTool.Instance);
+
+                        if (kSelectable != null)
+                        {                            
+                            ClusterMapSelectTool.Instance.Select(null, true);
+                            ClusterMapSelectTool.Instance.Select((KSelectable)kSelectable, true);
+                        }
+                    }
+                        
+                }
+                else
+                {
+                    Add_Debug_Button.ClusterGridEntityMoveButton.ChangeState(0);
+                    Add_Debug_Button.ClusterGridEntityMoveButtonTooltip.SetSimpleTooltip("Must Enable Debug Mode");
+                    if (ClusterGridEntityMoveTool.Instance.isActive)
+                    {
+                        ClusterMapSelectTool.Instance.Activate();
+                    }
+                    var kSelectable = m_selected.GetValue(ClusterMapSelectTool.Instance);
+
+                    if (kSelectable != null)
+                    {
+                        ClusterMapSelectTool.Instance.Select(null, true);
+                        ClusterMapSelectTool.Instance.Select((KSelectable)kSelectable, true);
+                    }
+
+                }
+            }
+        }
+
+
+
+
         [HarmonyPatch(typeof(ClusterMapScreen), "OnShow")]
         public class ClusterMapScreen_OnShow_Patch
         {
             public static void Postfix(bool show)
             {
+                
+
+                ClusterGridEntityMoveTool.Instance.isClusterMapScreenActive = show;
+
                 if (!DebugHandler.enabled)
                     return;
 
-                ClusterGridEntityMoveTool.Instance.isClusterMapScreenActive = show;
                 if (show)
                     Add_Debug_Button.ClusterGridEntityMoveButton.ChangeState(1);
                 else
                     Add_Debug_Button.ClusterGridEntityMoveButton.ChangeState(0);
+
             }
         }
 
@@ -31,7 +84,7 @@ namespace Starmap_Shenanigans
             {
                 if (!DebugHandler.enabled)
                     return true;
-
+                
                 if (ClusterGridEntityMoveTool.Instance.isActive)
                 {
                     if (ClusterGridEntityMoveTool.clusterGridEntityToMove == null)
@@ -55,7 +108,7 @@ namespace Starmap_Shenanigans
             public static ToolTip ClusterGridEntityMoveButtonTooltip = null;
             public static void OnClickClusterGridEntityMoveButton()
             {
-                if (!ClusterGridEntityMoveTool.Instance.isClusterMapScreenActive)
+                if (!DebugHandler.enabled ||!ClusterGridEntityMoveTool.Instance.isClusterMapScreenActive)
                 {
                     KMonoBehaviour.PlaySound(GlobalAssets.GetSound("Negative"));
                     return;
@@ -75,8 +128,8 @@ namespace Starmap_Shenanigans
             }
             public static void Postfix(TopLeftControlScreen __instance, MultiToggle ___sandboxToggle)
             {
-                if (!DebugHandler.enabled)
-                    return;
+                //if (!DebugHandler.enabled)
+                    //return;
 
                 var clusterGridEntityMoveButton = Util.KInstantiateUI(___sandboxToggle.gameObject, ___sandboxToggle.transform.parent.gameObject, true).transform;
                 clusterGridEntityMoveButton.SetSiblingIndex(___sandboxToggle.transform.GetSiblingIndex() + 1);
@@ -87,7 +140,9 @@ namespace Starmap_Shenanigans
                 clusterGridEntityMoveButton.TryGetComponent<ToolTip>(out ClusterGridEntityMoveButtonTooltip);
                 ClusterGridEntityMoveButton.ChangeState(0);
                 ClusterGridEntityMoveButton.onClick = (System.Action)Delegate.Combine(ClusterGridEntityMoveButton.onClick, new System.Action(OnClickClusterGridEntityMoveButton));
-                ClusterGridEntityMoveButtonTooltip.SetSimpleTooltip("");
+                ClusterGridEntityMoveButtonTooltip.SetSimpleTooltip(DebugHandler.enabled ? "" : "Must Enable Debug Mode");
+
+                
             }
 
         }
@@ -97,8 +152,8 @@ namespace Starmap_Shenanigans
         {
             public static void Postfix(PlayerController __instance)
             {
-                if (!DebugHandler.enabled)
-                    return;
+                //if (!DebugHandler.enabled)
+                    //return;
 
                 var interfaceTools = new List<InterfaceTool>(__instance.tools);
                 var clusterGridEntityMoveTool = new GameObject(nameof(ClusterGridEntityMoveTool), typeof(ClusterGridEntityMoveTool));

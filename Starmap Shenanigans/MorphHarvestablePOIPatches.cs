@@ -28,8 +28,8 @@ namespace Starmap_Shenanigans
         {
             public static void Postfix(ClusterGridEntity __instance)
             {
-                if (!DebugHandler.enabled)
-                    return;
+                //if (!DebugHandler.enabled)
+                    //return;
                 if (__instance.TryGetComponent(out HarvestablePOIClusterGridEntity _))
                 {
                     __instance.FindOrAddComponent<DuplicateHarvestablePOI>();

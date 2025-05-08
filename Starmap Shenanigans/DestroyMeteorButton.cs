@@ -14,9 +14,9 @@ namespace Starmap_Shenanigans
 
         public void SetButtonTextOverride(ButtonMenuTextOverride textOverride) { }
 
-        public bool SidescreenEnabled() => true;
+        public bool SidescreenEnabled() => DebugHandler.enabled;
 
-        public bool SidescreenButtonInteractable() => true;
+        public bool SidescreenButtonInteractable() => DebugHandler.enabled;
 
 
 
@@ -38,8 +38,8 @@ namespace Starmap_Shenanigans
         {
             public static void Postfix(ClusterGridEntity __instance)
             {
-                if (!DebugHandler.enabled)
-                    return;
+                //if (!DebugHandler.enabled)
+                    //return;
                 if (__instance.TryGetComponent(out ClusterMapMeteorShowerVisualizer _))
                 {
                     __instance.FindOrAddComponent<DestroyMeteorButton>();

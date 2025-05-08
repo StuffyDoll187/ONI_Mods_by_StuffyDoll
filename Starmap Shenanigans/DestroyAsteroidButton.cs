@@ -14,16 +14,16 @@ namespace Starmap_Shenanigans
         {
             public static void Postfix(AsteroidGridEntity __instance, WorldContainer ___m_worldContainer)
             {
-                if (!DebugHandler.enabled)// || ___m_worldContainer.IsStartWorld)
-                    return;
+                //if (!DebugHandler.enabled)// || ___m_worldContainer.IsStartWorld)
+                    //return;
                 __instance.FindOrAddComponent<DestroyAsteroidButton>();                
             }
         }
         public string SidescreenButtonText { get => "DESTROY! : Experimental"; }
         public string SidescreenButtonTooltip { get => "Use with extreme caution.\nNot recommended."; }
         public void SetButtonTextOverride(ButtonMenuTextOverride textOverride) { }
-        public bool SidescreenEnabled() => true;
-        public bool SidescreenButtonInteractable() => true;        
+        public bool SidescreenEnabled() => DebugHandler.enabled;
+        public bool SidescreenButtonInteractable() => DebugHandler.enabled;        
         public void OnSidescreenButtonPressed()
         {           
             EaterOfWorlds.DestroyWorld(m_worldContainer.id);                        
