@@ -18,7 +18,7 @@ namespace Starmap_Shenanigans
             public static void Postfix(bool debugEnabled)
             {
 
-                if (MainMenu.Instance.IsActive())
+                if (SaveGame.Instance == null)
                     return;
 
 
