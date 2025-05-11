@@ -1,0 +1,6 @@
+requiredDlcIds:
+
+forbiddenDlcIds:
+minimumSupportedBuild: 661174
+version: 1.0.0
+APIVersion: 2
