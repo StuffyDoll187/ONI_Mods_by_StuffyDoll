@@ -40,7 +40,8 @@ namespace Starmap_Shenanigans
             {
                 //if (!DebugHandler.enabled)
                     //return;
-                if (__instance.TryGetComponent(out ClusterMapMeteorShowerVisualizer _))
+                
+                if (__instance.GetSMI<ClusterMapMeteorShower.Instance>() != null)//if (__instance.TryGetComponent(out ClusterMapMeteorShowerVisualizer _))
                 {
                     __instance.FindOrAddComponent<DestroyMeteorButton>();
 
