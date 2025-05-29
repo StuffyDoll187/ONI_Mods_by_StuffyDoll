@@ -92,7 +92,7 @@ namespace Upgradeable_Dupes_And_Critters
             typeof(int) ,
             typeof(float ),
             typeof(string) ,
-            typeof(int),
+            typeof(float),
             typeof(bool ) ,
             typeof(bool) ,
             typeof(float ),
@@ -112,7 +112,7 @@ namespace Upgradeable_Dupes_And_Critters
               int max_probing_radius,
               float moveSpeed,
               string onDeathDropID,
-              int onDeathDropCount,
+              float onDeathDropCount,
               bool drownVulnerable,
               bool entombVulnerable,
               float warningLowTemperature,
@@ -304,7 +304,12 @@ namespace Upgradeable_Dupes_And_Critters
         [HarmonyPatch("CreateDrops")]
         internal class Butcherable_CreateDrops
         {
-            private static GameObject[] Postfix(GameObject[] __result, Butcherable __instance)
+            public static void Prefix(ref float multiplier, Butcherable __instance)
+            {
+                CritterUpgradeTracker cmp = __instance.gameObject.GetComponent<CritterUpgradeTracker>();
+                multiplier *= (cmp.Upgrades + 1);
+            }
+            /*private static GameObject[] Postfix(GameObject[] __result, Butcherable __instance)
             {
                 //if (!Config.Instance.Enable_Critter_Upgrade_Propagation_To_Offspring)
                   //  return __result;
@@ -328,7 +333,7 @@ namespace Upgradeable_Dupes_And_Critters
                     }
                 }
                 return __result;
-            }
+            }*/
 
             private static int GetDropSpawnLocation(Butcherable instance)
             {
