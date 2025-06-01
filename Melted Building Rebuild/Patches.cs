@@ -1,5 +1,7 @@
 ﻿using HarmonyLib;
 using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 namespace Melted_Rebuild
@@ -12,29 +14,51 @@ namespace Melted_Rebuild
         {
             public static Building Building;
             public static Deconstructable Deconstructable;
+            public static List<Tag> ConstructionElements = new List<Tag>();
+            public static string CurrentFacade;
+
             public static void Prefix(PrimaryElement primary_element)
             {
-                Building = primary_element.GetComponent<Building>();
-                if (Building.TryGetComponent(out Deconstructable deconstructable))
-                    Deconstructable = deconstructable;
-                else
-                    Deconstructable = null;
+                if (primary_element.TryGetComponent(out Building))
+                    Building.TryGetComponent(out Deconstructable);
+
             }
             public static void Postfix(PrimaryElement primary_element)
             {
-                var constructionElements = new List<Tag>();                
+                if (Building == null)
+                    return;
+                ConstructionElements.Clear();
                 if (Deconstructable != null)
-                {                   
+                {
                     for (int i = 0; i < Deconstructable.constructionElements.Length; i++)
-                        constructionElements.Add(Deconstructable.constructionElements[i]);
+                        ConstructionElements.Add(Deconstructable.constructionElements[i]);
                 }
-                else                
-                    constructionElements.Add(primary_element.Element.tag);                
-                Building.Def.TryPlace(Building.gameObject, Building.transform.position, Building.Orientation, constructionElements);
-                Building = null;
-                Deconstructable = null;
+                else
+                    ConstructionElements.Add(primary_element.Element.tag);
+
+
+                if (Building.TryGetComponent(out BuildingFacade buildingFacade))
+                    CurrentFacade = buildingFacade.CurrentFacade;
+                else
+                    CurrentFacade = null;
+
+                //Debug.Log(Building.Def.PrefabID);
+                
+                if (Exclusions.Contains(Building.Def.PrefabID))
+                    return;
+
+                Building.Def.TryPlace(Building.gameObject, Building.transform.position, Building.Orientation, ConstructionElements, CurrentFacade, false);
+
             }
-        }
-     
+            public static string[] Exclusions = new string[]
+            {
+                GasLimitValveConfig.ID,
+                LiquidLimitValveConfig.ID,                
+                LogicRibbonReaderConfig.ID,
+                LogicRibbonWriterConfig.ID
+
+            };
+
+        }     
     }
 }
