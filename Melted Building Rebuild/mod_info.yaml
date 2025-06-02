@@ -2,5 +2,5 @@ requiredDlcIds:
 
 forbiddenDlcIds:
 minimumSupportedBuild: 671603
-version: 1.0.1
+version: 1.0.2
 APIVersion: 2
